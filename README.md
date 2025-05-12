@@ -14,14 +14,15 @@ It includes data preprocessing, model tuning with grid search cross-validation, 
 - **Evaluation**: Classification report and prediction scatter plot
 
 ## Project Structure
+```
 ├── Model.py # Main script
 ├── requirements.txt # Reuirements 
 └── README.md # Project documentation
-
-you can install the dependencies using 
+```
+# you can install the dependencies using 
 ```pip install -r requirements.txt```
 
-Running the Project
+# Running the Project
 ```python Model.py```
 
 # This will:
