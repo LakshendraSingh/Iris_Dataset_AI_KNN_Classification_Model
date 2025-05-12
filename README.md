@@ -74,7 +74,6 @@ weighted avg       0.94      0.92      0.92        24
 * A scatter plot showing the distribution of the first two features colored by species.
 * A scatter plot of predicted vs actual class labels on the validation set.
 
-* 
 ## Notes
 
 * Although PolynomialFeatures is more commonly used with linear models, it's included here to demonstrate feature expansion and its compatibility with KNN.
