@@ -13,7 +13,7 @@ It includes data preprocessing, model tuning with grid search cross-validation, 
 - **Hyperparameter Tuning**: Grid search on `n_neighbors` from 1 to 10
 - **Evaluation**: Classification report and prediction scatter plot
 
-## 📂 Project Structure
+## Project Structure
 ├── Model.py # Main script
 ├── requirements.txt # Reuirements 
 └── README.md # Project documentation
@@ -30,7 +30,7 @@ Running the Project
 5. Visualize predictions vs actual values.
 
 ## Sample Output
-`
+```
 
 {'memory': None, 'steps': [('scale', StandardScaler()), ('poly', PolynomialFeatures()), ('model', KNeighborsClassifier())], 
 'transform_input': None, 'verbose': False, 'scale': StandardScaler(), 'poly': PolynomialFeatures(), 'model': KNeighborsClassifier(), 
@@ -61,7 +61,7 @@ Running the Project
    macro avg       0.90      0.94      0.91        24
 weighted avg       0.94      0.92      0.92        24
 
-`
+```
 
 ## The model achieves ~92% accuracy on the validation set.
 
