@@ -18,8 +18,11 @@ It includes data preprocessing, model tuning with grid search cross-validation, 
 ├── requirements.txt # Reuirements 
 └── README.md # Project documentation
 
+you can install the dependencies using 
+```pip install -r requirements.txt```
+
 Running the Project
-`python Model.py`
+```python Model.py```
 
 # This will:
 
