@@ -16,7 +16,7 @@ It includes data preprocessing, model tuning with grid search cross-validation, 
 ## Project Structure
 ```
 ├── Model.py # Main script
-├── requirements.txt # Reuirements 
+├── requirements.txt # Requirements 
 └── README.md # Project documentation
 ```
 # you can install the dependencies using 
