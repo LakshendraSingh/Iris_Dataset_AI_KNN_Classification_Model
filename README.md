@@ -67,7 +67,68 @@ weighted avg       0.94      0.92      0.92        24
 
 ```
 
-## The model achieves ~92% accuracy on the validation set.
+## The model achieves ~92% accuracy on the validation set. HOWEVER, it achieves 100% accuracy on the test set
+```
+{'memory': None, 'steps': [('scale', StandardScaler()), ('poly', PolynomialFeatures()), ('model', KNeighborsClassifier())], 'transform_input': None, 'verbose': False, 'scale': StandardScaler(), 'poly': PolynomialFeatures(), 'model': KNeighborsClassifier(), 'scale__copy': True, 'scale__with_mean': True, 'scale__with_std': True, 'poly__degree': 2, 'poly__include_bias': True, 'poly__interaction_only': False, 'poly__order': 'C', 'model__algorithm': 'auto', 'model__leaf_size': 30, 'model__metric': 'minkowski', 'model__metric_params': None, 'model__n_jobs': None, 'model__n_neighbors': 5, 'model__p': 2, 'model__weights': 'uniform'}
+   mean_fit_time  std_fit_time  mean_score_time  std_score_time  \
+0       0.003094      0.000626         0.003361        0.000481   
+1       0.002218      0.000006         0.002624        0.000016   
+2       0.002150      0.000015         0.003361        0.001057   
+3       0.002141      0.000021         0.002613        0.000100   
+4       0.002153      0.000028         0.002578        0.000027   
+5       0.002245      0.000165         0.002749        0.000134   
+6       0.002275      0.000162         0.002671        0.000050   
+7       0.002153      0.000062         0.002606        0.000028   
+8       0.002107      0.000024         0.002542        0.000025   
+9       0.002419      0.000445         0.002776        0.000063   
+
+   param_model__n_neighbors                      params  split0_test_score  \
+0                         1   {'model__n_neighbors': 1}              0.950   
+1                         2   {'model__n_neighbors': 2}              0.850   
+2                         3   {'model__n_neighbors': 3}              0.925   
+3                         4   {'model__n_neighbors': 4}              0.875   
+4                         5   {'model__n_neighbors': 5}              0.950   
+5                         6   {'model__n_neighbors': 6}              0.900   
+6                         7   {'model__n_neighbors': 7}              0.925   
+7                         8   {'model__n_neighbors': 8}              0.925   
+8                         9   {'model__n_neighbors': 9}              0.950   
+9                        10  {'model__n_neighbors': 10}              0.900   
+
+   split1_test_score  split2_test_score  mean_test_score  std_test_score  \
+0              0.900              0.975         0.941667    3.118048e-02   
+1              0.900              0.900         0.883333    2.357023e-02   
+2              0.925              0.975         0.941667    2.357023e-02   
+3              0.925              0.950         0.916667    3.118048e-02   
+4              0.925              0.950         0.941667    1.178511e-02   
+5              0.925              0.925         0.916667    1.178511e-02   
+6              0.925              0.950         0.933333    1.178511e-02   
+7              0.925              0.925         0.925000    1.110223e-16   
+8              0.950              0.950         0.950000    1.110223e-16   
+9              0.950              0.925         0.925000    2.041241e-02   
+
+   rank_test_score  
+0                2  
+1               10  
+2                2  
+3                8  
+4                2  
+5                8  
+6                5  
+7                6  
+8                1  
+9                6  
+Best Number of Neighbors (K): 9
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        10
+           1       1.00      1.00      1.00         9
+           2       1.00      1.00      1.00        11
+
+    accuracy                           1.00        30
+   macro avg       1.00      1.00      1.00        30
+weighted avg       1.00      1.00      1.00        30
+
+```
 
 ## Visualizations
 
